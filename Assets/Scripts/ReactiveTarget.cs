@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ReactiveTarget : MonoBehaviour
 {
+    //"умирание"
     private IEnumerator Die()
     {
         this.transform.Rotate(-75, 0, 0);
@@ -13,6 +14,7 @@ public class ReactiveTarget : MonoBehaviour
         Destroy(this.gameObject);
     }
 
+    //реакция на попадание
     public void ReactToHit()
     {
         WanderingAI behavior = GetComponent<WanderingAI>();

@@ -11,6 +11,8 @@ public class Fireball : MonoBehaviour
     {
         transform.Translate(0, 0, speed * Time.deltaTime);
     }
+
+    //действия при сталкновении
     void OnTriggerEnter(Collider other)
     {
         PlayerCharacter player = other.GetComponent<PlayerCharacter>();
